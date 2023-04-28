@@ -3,9 +3,9 @@
         <div class="row gx-5 align-items-center">
             <div class="col-lg-6">
                 <div class="faq-img-wrap">
-                    <img src="frontend-files/img/faq-shape.png" alt="Image" class="faq-shape bounce">
-                    <img src="frontend-files/img/faq-img-1.jpg" alt="Image" class="faq-img-one">
-                    <img src="frontend-files/img/faq-img-2.jpg" alt="Image" class="faq-img-two">
+                    <img  src="/frontend-files/img/faq-shape.png" alt="Image" class="faq-shape bounce">
+                    <img  src="/frontend-files/img/faq-img-1.jpg" alt="Image" class="faq-img-one">
+                    <img  src="/frontend-files/img/faq-img-2.jpg" alt="Image" class="faq-img-two">
                 </div>
             </div>
             <div class="col-lg-6">

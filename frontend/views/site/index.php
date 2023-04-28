@@ -4,6 +4,8 @@
 
 $this->title = 'My Yii Application';
 ?>
+<p><a href="<?php echo $checkout_url; ?>">Payme</a>
+</p>
 <?= \frontend\widgets\About::widget() ?>
 <?= \frontend\widgets\Contact::widget() ?>
 <?= \frontend\widgets\Service::widget() ?>

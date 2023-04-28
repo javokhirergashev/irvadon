@@ -4,39 +4,27 @@ namespace frontend\models;
 
 use Yii;
 use yii\base\Model;
-use common\models\User;
+use backend\models\User;
+use yii\web\UploadedFile;
 
 /**
  * Signup form
  */
-class SignupForm extends Model
+class SignupForm extends User
 {
     public $username;
     public $email;
     public $password;
+    public $firstname;
+    public $lastname;
+    public $phone;
+    public $birth_date;
 
 
     /**
      * {@inheritdoc}
      */
-    public function rules()
-    {
-        return [
-            ['username', 'trim'],
-            ['username', 'required'],
-            ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
-            ['username', 'string', 'min' => 2, 'max' => 255],
 
-            ['email', 'trim'],
-            ['email', 'required'],
-            ['email', 'email'],
-            ['email', 'string', 'max' => 255],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
-
-            ['password', 'required'],
-            ['password', 'string', 'min' => Yii::$app->params['user.passwordMinLength']],
-        ];
-    }
 
     /**
      * Signs user up.
@@ -45,18 +33,33 @@ class SignupForm extends Model
      */
     public function signup()
     {
-        if (!$this->validate()) {
-            return null;
-        }
-        
-        $user = new User();
-        $user->username = $this->username;
-        $user->email = $this->email;
-        $user->setPassword($this->password);
-        $user->generateAuthKey();
-        $user->generateEmailVerificationToken();
+        $model = new User();
 
-        return $user->save() && $this->sendEmail($user);
+        $model->creator = Yii::$app->user->getId();
+        $model->created_date = date("Y-m-d H:i:s");
+        $model->position_id == 0;
+        if ($this->request->isPost) {
+            if (!empty(!$model->status)){
+                $model->status = 1;
+            }else{
+                $model->status = 0;
+            }
+
+            if ($model->load($this->request->post())) {
+                if ($model->validate()) {
+                    "<pre>";
+                    print_r($model); die();
+                    $model->generatePassword($model->password);
+                    $model->save();
+                    return $this->redirect(['index']);
+                }else{
+                    print_r($model->errors);die;
+                }
+            }
+        } else {
+            $model->loadDefaultValues();
+        }
+
     }
 
     /**

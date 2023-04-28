@@ -2,8 +2,10 @@
 
 namespace frontend\controllers;
 
+use backend\models\User;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
+use uzdevid\payme\merchant\CheckoutUrl;
 use Yii;
 use yii\base\InvalidArgumentException;
 use yii\web\BadRequestHttpException;
@@ -15,6 +17,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use yii\web\UploadedFile;
 
 /**
  * Site controller
@@ -24,33 +27,33 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::class,
-                'only' => ['logout', 'signup'],
-                'rules' => [
-                    [
-                        'actions' => ['signup'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::class,
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
+//    public function behaviors()
+//    {
+//        return [
+//            'access' => [
+//                'class' => AccessControl::class,
+//                'only' => ['logout', 'signup'],
+//                'rules' => [
+//                    [
+//                        'actions' => ['signup'],
+//                        'allow' => true,
+//                        'roles' => ['?'],
+//                    ],
+//                    [
+//                        'actions' => ['logout'],
+//                        'allow' => true,
+//                        'roles' => ['@'],
+//                    ],
+//                ],
+//            ],
+//            'verbs' => [
+//                'class' => VerbFilter::class,
+//                'actions' => [
+//                    'logout' => ['post'],
+//                ],
+//            ],
+//        ];
+//    }
 
     /**
      * {@inheritdoc}
@@ -75,7 +78,24 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $merchant_id = $_ENV['PAYME_MERCHANT_ID'];
+
+        $account = [
+            'order_id' => 1,
+        ];
+
+        $amount = 100000; //tiyin
+
+        $params = [
+            'l' => 'uz',
+            'c' => 'https://example.com/checkout/success',
+            'ct' => 15000,
+            'cr' => 'uzs'
+        ];
+
+        $checkout_url = CheckoutUrl::generate($merchant_id, $account, $amount, $params);
+
+        return $this->render('index', compact('checkout_url'));
     }
 
     /**
@@ -153,12 +173,30 @@ class SiteController extends Controller
      */
     public function actionSignup()
     {
-        $model = new SignupForm();
-        if ($model->load(Yii::$app->request->post()) && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
-            return $this->goHome();
-        }
+        $model = new User();
 
+        $model->creator = 9;
+        $model->position_id = 10;
+        $model->created_date = date("Y-m-d H:i:s");
+        if ($this->request->isPost) {
+            if (!empty(!$model->status)){
+                $model->status = 1;
+            }else{
+                $model->status = 0;
+            }
+
+            if ($model->load($this->request->post())) {
+                if ($model->validate()) {
+                    $model->generatePassword($model->password);
+                    $model->save();
+                    return $this->redirect(['index']);
+                }else{
+                    print_r($model->errors);die;
+                }
+            }
+        } else {
+            $model->loadDefaultValues();
+        }
         return $this->render('signup', [
             'model' => $model,
         ]);
@@ -255,5 +293,11 @@ class SiteController extends Controller
         return $this->render('resendVerificationEmail', [
             'model' => $model
         ]);
+    }
+
+    public function actionOzgar($til){
+        Yii::$app->session->set('til', $til);
+        Yii::$app->language=$til;
+        return $this->redirect(Yii::$app->request->referrer);
     }
 }

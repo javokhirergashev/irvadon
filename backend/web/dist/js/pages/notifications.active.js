@@ -399,7 +399,7 @@ function function12() {
 
             // create the notification
             var notification = new NotificationFx({
-                message: '<div class="ns-thumb"><img src="assets/dist/img/user1.jpg"/></div><div class="ns-content"><p><a href="#">Zoe Moulder</a> accepted your invitation.</p></div>',
+                message: '<div class="ns-thumb"><img  src="/assets/dist/img/user1.jpg"/></div><div class="ns-content"><p><a href="#">Zoe Moulder</a> accepted your invitation.</p></div>',
                 layout: 'other',
                 ttl: 6000,
                 effect: 'thumbslider',

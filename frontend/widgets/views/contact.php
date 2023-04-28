@@ -44,7 +44,7 @@
                 <div class="col-xl-8 col-lg-7">
                     <div class="cta-content">
                         <div class="cta-logo">
-                            <img src="frontend-files/img/cta-icon-2.png" alt="Image">
+                            <img  src="/frontend-files/img/cta-icon-2.png" alt="Image">
                         </div>
                         <div class="content-title style2">
                             <h2>Don't Hesitate To Contact us</h2>

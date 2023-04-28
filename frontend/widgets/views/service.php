@@ -12,7 +12,7 @@
         <div class="service-slider-one style2 owl-carousel">
             <div class="service-card style3" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
                 <div class="service-img">
-                    <img src="frontend-files/img/services/service-12.jpg" alt="Image">
+                    <img  src="/frontend-files/img/services/service-12.jpg" alt="Image">
                     <span class="service-icon"><i class="flaticon-traumatology"></i></span>
                 </div>
                 <div class="service-info">
@@ -23,7 +23,7 @@
             </div>
             <div class="service-card style3" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
                 <div class="service-img">
-                    <img src="frontend-files/img/services/service-9.jpg" alt="Image">
+                    <img  src="/frontend-files/img/services/service-9.jpg" alt="Image">
                     <span class="service-icon"><i class="flaticon-hospital-ward"></i></span>
                 </div>
                 <div class="service-info">
@@ -34,7 +34,7 @@
             </div>
             <div class="service-card style3" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="600">
                 <div class="service-img">
-                    <img src="frontend-files/img/services/service-10.jpg" alt="Image">
+                    <img  src="/frontend-files/img/services/service-10.jpg" alt="Image">
                     <span class="service-icon"><i class="flaticon-nurse"></i></span>
                 </div>
                 <div class="service-info">
@@ -45,7 +45,7 @@
             </div>
             <div class="service-card style3" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="800">
                 <div class="service-img">
-                    <img src="frontend-files/img/services/service-11.jpg" alt="Image">
+                    <img  src="/frontend-files/img/services/service-11.jpg" alt="Image">
                     <span class="service-icon"><i class="flaticon-health-care"></i></span>
                 </div>
                 <div class="service-info">

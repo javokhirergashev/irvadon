@@ -12,7 +12,7 @@
             <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                 <div class="blog-card style3">
                     <div class="blog-img">
-                        <img src="frontend-files/img/blog/blog-2.jpg" alt="Image">
+                        <img  src="/frontend-files/img/blog/blog-2.jpg" alt="Image">
                     </div>
                     <div class="blog-info">
                         <a href="posts-by-date.html" class="blog-date"><span>25</span>Jun</a>
@@ -28,7 +28,7 @@
             <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                 <div class="blog-card style3">
                     <div class="blog-img">
-                        <img src="frontend-files/img/blog/blog-4.jpg" alt="Image">
+                        <img  src="/frontend-files/img/blog/blog-4.jpg" alt="Image">
                     </div>
                     <div class="blog-info">
                         <a href="posts-by-date.html" class="blog-date"><span>18</span> Jun</a>
@@ -44,7 +44,7 @@
             <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                 <div class="blog-card style3">
                     <div class="blog-img">
-                        <img src="frontend-files/img/blog/blog-5.jpg" alt="Image">
+                        <img  src="/frontend-files/img/blog/blog-5.jpg" alt="Image">
                     </div>
                     <div class="blog-info">
                         <a href="posts-by-date.html" class="blog-date"><span>12</span>May</a>

@@ -31,18 +31,13 @@
                                     <span class="lang-name"></span>
                                 </button>
                                 <div class="dropdown-menu language-dropdown-menu">
-                                    <a class="dropdown-item" href="#">
-                                        <img src="frontend-files/img/uk.png" alt="flag">
-                                        Eng
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="frontend-files/img/china.png" alt="flag">
-                                        简体中文
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="frontend-files/img/uae.png" alt="flag">
-                                        العربيّة
-                                    </a>
+
+                                    <?php
+                                    foreach (Yii::$app->params['languages'] as $key => $value) {
+                                        echo " <a class='dropdown-item' href='" . \yii\helpers\Url::current(['language' => $value]) . "'>$value</a>";
+                                    }
+                                    ?>
+
                                 </div>
                             </div>
                         </div>
@@ -77,8 +72,10 @@
         <div class="header-bottom">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo-light" src="frontend-files/img/logo.jpg" alt="logo" style="width: 150px; height: auto">
-                    <img class="logo-dark" src="frontend-files/img/logo-dark.png" alt="logo" style="width: 150px; height: auto">
+                    <img class="logo-light"  src="/frontend-files/img/logo.jpg" alt="logo"
+                         style="width: 150px; height: auto">
+                    <img class="logo-dark"  src="/frontend-files/img/logo-dark.png" alt="logo"
+                         style="width: 150px; height: auto">
                 </a>
                 <div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
                     <div class="menu-close d-lg-none">
@@ -87,7 +84,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a href="#" class="nav-link active">
-                                Home
+                                <?= Yii::t("app", "til") ?>
                                 <i class="ri-arrow-down-s-line"></i>
                             </a>
                             <ul class="dropdown-menu">
@@ -227,13 +224,16 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="blog-details-no-sidebar.html" class="nav-link">Blog Details No Sidebar</a>
+                                            <a href="blog-details-no-sidebar.html" class="nav-link">Blog Details No
+                                                Sidebar</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="blog-details-left-sidebar.html" class="nav-link">Blog Details Left Sidebar</a>
+                                            <a href="blog-details-left-sidebar.html" class="nav-link">Blog Details Left
+                                                Sidebar</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="blog-details-right-sidebar.html" class="nav-link">Blog Details Right Sidebar</a>
+                                            <a href="blog-details-right-sidebar.html" class="nav-link">Blog Details
+                                                Right Sidebar</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -278,12 +278,14 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="hero-content"  data-speed="0.10" data-revert="true">
+                        <div class="hero-content" data-speed="0.10" data-revert="true">
                             <h1>Telehealth Services React Quickly To Epidemics</h1>
-                            <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from making it over old richer.</p>
+                            <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                                of classical Latin literature from making it over old richer.</p>
                             <div class="hero-btn">
                                 <a href="about.html" class="btn style1">Find Out More</a>
-                                <a class="play-video" data-fancybox="" href="https://www.youtube.com/watch?v=UNSSuTSQI9I">
+                                <a class="play-video" data-fancybox=""
+                                   href="https://www.youtube.com/watch?v=UNSSuTSQI9I">
                                                 <span class="video-icon">
                                                     <i class="ri-play-fill"></i>
                                                 </span>
@@ -299,12 +301,14 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="hero-content"  data-speed="0.10" data-revert="true">
+                        <div class="hero-content" data-speed="0.10" data-revert="true">
                             <h1>The Pursuit Of Advanced Medicine For Your Life</h1>
-                            <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from making it over old richer.</p>
+                            <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                                of classical Latin literature from making it over old richer.</p>
                             <div class="hero-btn">
                                 <a href="about.html" class="btn style1">Find Out More</a>
-                                <a class="play-video" data-fancybox="" href="https://www.youtube.com/watch?v=UNSSuTSQI9I">
+                                <a class="play-video" data-fancybox=""
+                                   href="https://www.youtube.com/watch?v=UNSSuTSQI9I">
                                                 <span class="video-icon">
                                                     <i class="ri-play-fill"></i>
                                                 </span>
@@ -320,12 +324,14 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="hero-content"  data-speed="0.10" data-revert="true">
+                        <div class="hero-content" data-speed="0.10" data-revert="true">
                             <h1>Take Care Of Your Body &amp; It'll Take Care Of You</h1>
-                            <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from making it over old richer.</p>
+                            <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                                of classical Latin literature from making it over old richer.</p>
                             <div class="hero-btn">
                                 <a href="about.html" class="btn style1">Find Out More</a>
-                                <a class="play-video" data-fancybox="" href="https://www.youtube.com/watch?v=UNSSuTSQI9I">
+                                <a class="play-video" data-fancybox=""
+                                   href="https://www.youtube.com/watch?v=UNSSuTSQI9I">
                                                 <span class="video-icon">
                                                     <i class="ri-play-fill"></i>
                                                 </span>

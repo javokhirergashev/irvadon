@@ -11,7 +11,7 @@
         </div>
         <div class="team-slider-one style2 owl-carousel">
             <div class="team-card style2"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-                <img src="frontend-files/img/team/team-1.jpg" alt="Image">
+                <img  src="/frontend-files/img/team/team-1.jpg" alt="Image">
                 <div class="team-info">
                     <h3>Dr. Fedrick Bonita</h3>
                     <span>Othopedic Surgeon</span>
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="team-card style2"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                <img src="frontend-files/img/team/team-2.jpg" alt="Image">
+                <img  src="/frontend-files/img/team/team-2.jpg" alt="Image">
                 <div class="team-info">
                     <h3>Dr. Ken Moris</h3>
                     <span>Urology Efficient</span>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="team-card style2"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
-                <img src="frontend-files/img/team/team-3.jpg" alt="Image">
+                <img  src="/frontend-files/img/team/team-3.jpg" alt="Image">
                 <div class="team-info">
                     <h3>Dr. Luiz Frank</h3>
                     <span>Neurosurgery Efficient</span>
@@ -98,7 +98,7 @@
                 </div>
             </div>
             <div class="team-card style2"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
-                <img src="frontend-files/img/team/team-4.jpg" alt="Image">
+                <img  src="/frontend-files/img/team/team-4.jpg" alt="Image">
                 <div class="team-info">
                     <h3>Dr. Selina Gomez</h3>
                     <span>Surgery Efficient </span>
@@ -127,7 +127,7 @@
                 </div>
             </div>
             <div class="team-card style2"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                <img src="frontend-files/img/team/team-5.jpg" alt="Image">
+                <img  src="/frontend-files/img/team/team-5.jpg" alt="Image">
                 <div class="team-info">
                     <h3>Dr. Sarai Conn</h3>
                     <span>Senior Dentist</span>
@@ -156,7 +156,7 @@
                 </div>
             </div>
             <div class="team-card style2"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
-                <img src="frontend-files/img/team/team-6.jpg" alt="Image">
+                <img  src="/frontend-files/img/team/team-6.jpg" alt="Image">
                 <div class="team-info">
                     <h3>Dr. Maureen Klein</h3>
                     <span>Othopedic Surgeon</span>

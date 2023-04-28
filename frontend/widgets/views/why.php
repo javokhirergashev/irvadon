@@ -37,7 +37,7 @@
                     <div class="wh-bg-3 bg-f"></div>
                     <div class="about-doctor-box">
                         <div class="doctor-img">
-                            <img src="frontend-files/img/about/doctor-1.jpg" alt="Image">
+                            <img  src="/frontend-files/img/about/doctor-1.jpg" alt="Image">
                         </div>
                         <div class="doctor-info">
                             <h5>Dr. Kate Winslet</h5>

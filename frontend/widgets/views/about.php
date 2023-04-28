@@ -12,8 +12,8 @@
         <div class="row gx-5 align-items-center">
             <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
                 <div class="about-img-wrap">
-                    <img src="frontend-files/img/about/about-img-4.jpg" alt="Image" class="about-img-one">
-                    <img src="frontend-files/img/about/about-img-5.jpg" alt="Image" class="about-img-two">
+                    <img  src="/frontend-files/img/about/about-img-4.jpg" alt="Image" class="about-img-one">
+                    <img  src="/frontend-files/img/about/about-img-5.jpg" alt="Image" class="about-img-two">
                     <div class="about-promo-box">
                         <span class="promo-icon"><i class="flaticon-medical-operation"></i></span>
                         <h2>700+ <span>Labratory Experts</span></h2>
