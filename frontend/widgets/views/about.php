@@ -4,8 +4,8 @@
         <div class="row">
             <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                 <div class="section-title style1 text-center mb-40">
-                    <span>About Us</span>
-                    <h2>Our Best Services &amp; Poplular Treatment Here</h2>
+                    <span> <?= Yii::t("app", "about1") ?></span>
+                    <h2> <?= Yii::t("app", "about2") ?></h2>
                 </div>
             </div>
         </div>
@@ -16,14 +16,14 @@
                     <img  src="/frontend-files/img/about/about-img-5.jpg" alt="Image" class="about-img-two">
                     <div class="about-promo-box">
                         <span class="promo-icon"><i class="flaticon-medical-operation"></i></span>
-                        <h2>700+ <span>Labratory Experts</span></h2>
+                        <h2>700+ <span> <?= Yii::t("app", "counter") ?></span></h2>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
                 <div class="about-content">
                     <div class="content-title style1">
-                        <p>There are many variations of passages of Lorem Ipsum amets avoilble but majority have suffered alteration in some form, by injected humour or randomise words which don't sure amet consec tetur adicing.</p>
+                        <p> <?= Yii::t("app", "slider2") ?></p>
                     </div>
                     <div class="feature-item-wrap">
                         <div class="feature-item">
@@ -31,8 +31,8 @@
                                 <i class="ri-check-line"></i>
                             </div>
                             <div class="feature-text">
-                                <h3>Mental health Solutions</h3>
-                                <p>Vestibulum ac diam sit amet quam vehicula elemen tum sed sit amet dui praesent sapien pellen tesque injected humour.</p>
+                                <h3> <?= Yii::t("app", "service1") ?></h3>
+                                <p> <?= Yii::t("app", "service1t") ?></p>
                             </div>
                         </div>
                         <div class="feature-item">
@@ -40,8 +40,8 @@
                                 <i class="ri-check-line"></i>
                             </div>
                             <div class="feature-text">
-                                <h3>Rapid Patient Improvement</h3>
-                                <p>Vestibulum ac diam sit amet quam vehicula elemen tum sed sit amet dui praesent sapien pellen tesque injected humour.</p>
+                                <h3> <?= Yii::t("app", "service2") ?></h3>
+                                <p> <?= Yii::t("app", "service2t") ?></p>
                             </div>
                         </div>
                         <div class="feature-item">
@@ -49,8 +49,8 @@
                                 <i class="ri-check-line"></i>
                             </div>
                             <div class="feature-text">
-                                <h3>World Class Treatment</h3>
-                                <p>Vestibulum ac diam sit amet quam vehicula elemen tum sed sit amet dui praesent sapien pellen tesque injected humour.</p>
+                                <h3> <?= Yii::t("app", "service3") ?></h3>
+                                <p> <?= Yii::t("app", "service3t") ?></p>
                             </div>
                         </div>
                     </div>
