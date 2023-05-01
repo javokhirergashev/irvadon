@@ -1,5 +1,31 @@
 <?php
-return[
-    "til" => "English",
+return [
+    "language" => "Uzbek",
+    "more" => "More",
+    "about1" => "About Us",
+    "about2" => "Our Popular Services",
+    "service1" => "Ambulance",
+    "service2" => "Permanent service",
+    "service3" => "Permanent monitoring",
+    "service4" => "Online appointment",
+    "service5" => "Qualified doctors",
+    "service6" => "Constant Communication",
+    "service5t" => "Our dedicated and skilled professionals will not let you down",
+    "service6t" => "We are in contact with you 24/7 to improve the quality of our service",
+    "service4t" => "Queuing is no longer a problem, do it all without leaving home",
+    "service1t" => "We have implemented a service to provide urgent medical care to every patient with a major pediatric illness",
+    "service2t" => "We have implemented our own continuous service system for patients who have been treated and are being treated in our hospital",
+    "service3t" => "Doctors are assigned to each community in order to maintain the health of children and adolescents among the local population and prevent them from contracting various types of diseases",
+    "slider1" => "Don't be indifferent to your children's health!",
+    "slider2" => "At the children's multidisciplinary medical center of Namangan region, our qualified specialists will help restore and maintain your child's health!",
+    "counter" => "Medical staff",
+    "service0" => "Our Services",
+    "service01" => "Services provided by our doctors",
+    "contact" => "Make an appointment with the doctor now",
+    "contact1" => "Make an appointment for the doctor you need through our website, it's all easy!",
+    "team" => "Our staff",
+    "team1" => "Our qualified doctors",
+    "team2" => "Our qualified doctors",
+    "organization" => "Namangan Regional Children's Multidisciplinary Medical Center"
 ]
 ?>

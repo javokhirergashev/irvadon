@@ -46,14 +46,14 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'value'=> function ($model) {
                                     return $model->getServiceName();
                                 },
-                                'filter'=>$service_name,
+//                                'filter'=>$service_name,
                             ],
                             [
                                 'attribute'=>'service_description',
                                 'value'=> function ($model) {
                                     return $model->getServiceDescription();
                                 },
-                                'filter'=>$service_description,
+//                                'filter'=>$service_description,
                             ],
                             [
                                 'attribute' => 'images',

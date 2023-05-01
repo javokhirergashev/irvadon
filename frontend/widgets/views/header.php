@@ -7,17 +7,17 @@
                     <div class="header-top-left">
                         <ul class="contact-info list-style">
                             <li>
-                                <span><i class="ri-customer-service-fill"></i></span>
-                                <p>Your Trusted Service Provider</p>
-                            </li>
-                            <li>
-                                <span><i class="ri-phone-fill"></i></span>
-                                <a href="tel:2455921125">(+245) 592 1125</a>
-                            </li>
-                            <li>
                                 <span><i class="ri-map-pin-fill"></i></span>
-                                <p>2767 Sunrise Street, NY 1002, USA</p>
+                                <p><?= Yii::t("app", "organization") ?></p>
                             </li>
+                            <?php if (!empty($contacts)): ?>
+                                <?php foreach ($contacts as $contact): ?>
+                                    <li>
+                                        <span><i class="ri-phone-fill"></i></span>
+                                        <a href="tel:<?= $contact->first_phone ?>"><?= $contact->first_phone ?></a>
+                                    </li>
+                                <?php endforeach ?>
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </div>
@@ -82,9 +82,7 @@
                         <a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
                     </div>
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item d-lg-none">
-                            <a href="appointment.html" class="nav-link btn style1">Book Appointment</a>
-                        </li>
+
                         <?php if (!empty($models)): ?>
                             <?php foreach ($models as $model): ?>
                                 <li class="nav-item">
@@ -97,9 +95,7 @@
                         <div class="option-item">
                             <button class="searchbtn"><i class="ri-search-line"></i></button>
                         </div>
-                        <div class="option-item">
-                            <a href="appointment.html" class="btn style1">Book Appointment</a>
-                        </div>
+
                     </div>
                 </div>
             </nav>

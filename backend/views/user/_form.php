@@ -114,7 +114,7 @@ use yii\widgets\ActiveForm;
                     </div>
                 </div>
                 <div class="text-end">
-                    <?= Html::submitButton('Save', ['class' => 'btn btn-primary']) ?>
+                    <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
                 </div>
             </form>
         </div>

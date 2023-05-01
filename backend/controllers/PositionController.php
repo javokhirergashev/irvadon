@@ -3,7 +3,7 @@
 namespace backend\controllers;
 
 use common\models\Position;
-use backend\models\Search\PositionSearch;
+use common\models\search\PositionSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -16,20 +16,20 @@ class PositionController extends Controller
     /**
      * @inheritDoc
      */
-//    public function behaviors()
-//    {
-//        return array_merge(
-//            parent::behaviors(),
-//            [
-//                'verbs' => [
-//                    'class' => VerbFilter::className(),
-//                    'actions' => [
-//                        'delete' => ['POST'],
-//                    ],
-//                ],
-//            ]
-//        );
-//    }
+    public function behaviors()
+    {
+        return array_merge(
+            parent::behaviors(),
+            [
+                'verbs' => [
+                    'class' => VerbFilter::className(),
+                    'actions' => [
+                        'delete' => ['POST'],
+                    ],
+                ],
+            ]
+        );
+    }
 
     /**
      * Lists all Position models.
@@ -94,7 +94,7 @@ class PositionController extends Controller
         $model = $this->findModel($id);
 
         if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
-            return $this->redirect(['view']);
+            return $this->redirect(['index']);
         }
 
         return $this->render('update', [

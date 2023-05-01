@@ -19,7 +19,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="row">
             <div class="col-sm-12">
                 <ul class="breadcrumb">
-                     <li class="breadcrumb-item"><a href="<?= \yii\helpers\Url::to(['site/index']) ?>">Dashboard </a></li>
+                    <li class="breadcrumb-item"><a href="<?= \yii\helpers\Url::to(['site/index']) ?>">Dashboard </a>
+                    </li>
                     <li class="breadcrumb-item"><i class="feather-chevron-right"></i></li>
                     <li class="breadcrumb-item active"><?= Html::encode($this->title) ?></li>
                 </ul>
@@ -49,19 +50,19 @@ $this->params['breadcrumbs'][] = $this->title;
 //            'auth_key',
                             'firstname',
                             'lastname',
-//            'email:email',
+//                            'position',
 //            'birth_date',
                             [
                                 'attribute' => 'position_id',
                                 'value' => function ($data) {
                                     if ($data->position_id) {
-                                        return \common\models\Position::findOne($data->status)->position_name;
+                                        return \common\models\Position::findOne($data->position_id)->position_name;
                                     }
                                 }
                             ],
                             'phone',
                             [
-                                'attribute' => 'images',
+                                'attribute' => 'image',
                                 'value' => function ($data) {
                                     $image = StaticFunctions::getImage('user', $data->id, $data->image);
                                     return "<img src='{$data->getAvatarImage()}' style='max-width: 60px; max-height: 60px;'";
@@ -107,9 +108,7 @@ $this->params['breadcrumbs'][] = $this->title;
 BUTTONS;
                                         return $code;
                                     }
-
                                 ],
-
                             ],
                         ],
                     ]); ?>

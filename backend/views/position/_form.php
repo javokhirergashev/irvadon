@@ -8,39 +8,18 @@ use yii\widgets\ActiveForm;
 /** @var yii\widgets\ActiveForm $form */
 ?>
 
+<div class="position-form">
 
+    <?php $form = ActiveForm::begin(); ?>
 
-<?php $form = ActiveForm::begin(); ?>
+    <?= $form->field($model, 'position_name')->textInput(['maxlength' => true]) ?>
 
-<div class="row mb-15" >
-    <div class="col-md-12">
-        <div class="card-box">
-            <form action="#">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                            <label class="col-md-3 col-form-label">Lavozim nomi</label>
-                            <div class="col-md-9">
-                                <?= $form->field($model, 'position_name')->textInput(['maxlength' => true])->label(false) ?>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                            <label class="col-md-3 col-form-label">Status</label>
-                            <div class="col-md-9">
-                                <?= $form->field($model, 'status')->textInput(['maxlength' => true, 'class' => 'form-control'])->label(false) ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-end">
-                    <?= Html::submitButton('Save', ['class' => 'btn btn-primary']) ?>
-                </div>
-            </form>
-        </div>
+    <?= $form->field($model, 'status')->textInput() ?>
+
+    <div class="form-group">
+        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>
+
+    <?php ActiveForm::end(); ?>
+
 </div>
-<?php ActiveForm::end(); ?>
-
-
