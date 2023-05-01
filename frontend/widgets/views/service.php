@@ -4,8 +4,8 @@
         <div class="row">
             <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                 <div class="section-title style1 text-center mb-40">
-                    <span>Our Services</span>
-                    <h2>Think Hard &amp; Focus On The Patient's Well-Being</h2>
+                    <span> <?= Yii::t("app", "service0") ?></span>
+                    <h2> <?= Yii::t("app", "service01") ?></h2>
                 </div>
             </div>
         </div>

@@ -279,9 +279,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="hero-content" data-speed="0.10" data-revert="true">
-                            <h1>Telehealth Services React Quickly To Epidemics</h1>
-                            <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
-                                of classical Latin literature from making it over old richer.</p>
+                            <h1>   <?= Yii::t("app", "slider1") ?></h1>
+                            <p>   <?= Yii::t("app", "slider2") ?></p>
                             <div class="hero-btn">
                                 <a href="about.html" class="btn style1">Find Out More</a>
                                 <a class="play-video" data-fancybox=""
@@ -302,9 +301,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="hero-content" data-speed="0.10" data-revert="true">
-                            <h1>The Pursuit Of Advanced Medicine For Your Life</h1>
-                            <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
-                                of classical Latin literature from making it over old richer.</p>
+                            <h1> <?= Yii::t("app", "slider1") ?></h1>
+                            <p> <?= Yii::t("app", "slider2") ?></p>
                             <div class="hero-btn">
                                 <a href="about.html" class="btn style1">Find Out More</a>
                                 <a class="play-video" data-fancybox=""
@@ -325,9 +323,8 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="hero-content" data-speed="0.10" data-revert="true">
-                            <h1>Take Care Of Your Body &amp; It'll Take Care Of You</h1>
-                            <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
-                                of classical Latin literature from making it over old richer.</p>
+                            <h1> <?= Yii::t("app", "slider1") ?></h1>
+                            <p> <?= Yii::t("app", "slider2") ?></p>
                             <div class="hero-btn">
                                 <a href="about.html" class="btn style1">Find Out More</a>
                                 <a class="play-video" data-fancybox=""

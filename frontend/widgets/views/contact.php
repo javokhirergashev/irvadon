@@ -8,9 +8,9 @@
                         <i class="flaticon-admision-form"></i>
                     </div>
                     <div class="promo-info">
-                        <h3>Contact Our Doctor</h3>
-                        <p>There are many variations of passages of words are valid.</p>
-                        <a href="service-one.html" class="link style2">View All Services <i class="flaticon-right-arrow"></i></a>
+                        <h3> <?= Yii::t("app", "service4") ?></h3>
+                        <p> <?= Yii::t("app", "service4t") ?></p>
+                        <a href="service-one.html" class="link style2"> <?= Yii::t("app", "more") ?> <i class="flaticon-right-arrow"></i></a>
                     </div>
                 </div>
             </div>
@@ -20,9 +20,9 @@
                         <i class="flaticon-aid-man"></i>
                     </div>
                     <div class="promo-info">
-                        <h3>Need Family Health</h3>
-                        <p>There are many variations of passages of words are valid.</p>
-                        <a href="appointment.html" class="link style2">Book Appointment <i class="flaticon-right-arrow"></i></a>
+                        <h3> <?= Yii::t("app", "service5") ?></h3>
+                        <p> <?= Yii::t("app", "service5t") ?></p>
+                        <a href="appointment.html" class="link style2"> <?= Yii::t("app", "more") ?> <i class="flaticon-right-arrow"></i></a>
                     </div>
                 </div>
             </div>
@@ -32,9 +32,9 @@
                         <i class="flaticon-support"></i>
                     </div>
                     <div class="promo-info">
-                        <h3>24 Hours Service</h3>
-                        <p>There are many variations of passages of words are valid.</p>
-                        <a href="register.html" class="link style2">Provide Registration<i class="flaticon-right-arrow"></i></a>
+                        <h3> <?= Yii::t("app", "service6") ?></h3>
+                        <p> <?= Yii::t("app", "service6t") ?></p>
+                        <a href="register.html" class="link style2"> <?= Yii::t("app", "more") ?><i class="flaticon-right-arrow"></i></a>
                     </div>
                 </div>
             </div>
@@ -47,8 +47,8 @@
                             <img  src="/frontend-files/img/cta-icon-2.png" alt="Image">
                         </div>
                         <div class="content-title style2">
-                            <h2>Don't Hesitate To Contact us</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto inventore voluptatem possimus quibusdam veritatis. Accusamus ipsum saepe quas.</p>
+                            <h2> <?= Yii::t("app", "contact") ?></h2>
+                            <p> <?= Yii::t("app", "contact1") ?></p>
                         </div>
                     </div>
                 </div>

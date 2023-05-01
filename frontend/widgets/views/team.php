@@ -4,8 +4,8 @@
         <div class="row">
             <div class="col-xxl-6 offset-xl-3 col-xl-8 offset-xl-2 col-lg-8 offset-lg-2  col-md-10 offset-md-1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                 <div class="section-title style1 text-center mb-40">
-                    <span>Our Team</span>
-                    <h2>Meet Our Expert &amp; Experienced Team Members</h2>
+                    <span> <?= Yii::t("app", "team") ?></span>
+                    <h2> <?= Yii::t("app", "team1") ?></h2>
                 </div>
             </div>
         </div>
