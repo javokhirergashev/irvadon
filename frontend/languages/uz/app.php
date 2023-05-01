@@ -25,6 +25,8 @@ return [
     "contact1" => "Web-saytimiz orqali o'zingizga kerakli shifokor uchun navbat oling, buning barchasi oson!",
     "team" => "Bizning xodimlar",
     "team1" => "Bizning malakali shifokorlarimiz",
+    "team2" => "Bizning malakali shifokorlarimiz",
+    "organization" => "Namangan viloyat bolalar ko'p tarmoqli tibbiyot markazi"
 
-    ]
+]
 ?>

@@ -12,6 +12,7 @@ return [
 //    'sourceLanguage' => 'ru',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'uz',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'i18n' => [

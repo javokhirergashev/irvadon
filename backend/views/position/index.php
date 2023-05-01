@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="row">
             <div class="col-sm-12">
                 <ul class="breadcrumb">
-                     <li class="breadcrumb-item"><a href="<?= \yii\helpers\Url::to(['site/index']) ?>">Dashboard </a></li>
+                    <li class="breadcrumb-item"><a href="<?= \yii\helpers\Url::to(['site/index']) ?>">Dashboard </a></li>
                     <li class="breadcrumb-item"><i class="feather-chevron-right"></i></li>
                     <li class="breadcrumb-item active"><?= Html::encode($this->title) ?></li>
                 </ul>
@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="table-responsive">
                     <?= GridView::widget([
                         'dataProvider' => $dataProvider,
-                        'filterModel' => $searchModel,
+//                        'filterModel' => $searchModel,
                         'tableOptions' => [
                             'class' => 'table table-hover table-striped table-bordered gridview-table'
                         ],

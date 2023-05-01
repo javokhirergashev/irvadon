@@ -45,7 +45,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'value'=> function ($model) {
                                     return $model->getAddress();
                                 },
-                                'filter'=>$address,
+//                                'filter'=>$address,
                             ],
                             'email:email',
                             'first_phone',
