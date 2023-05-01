@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'value'=> function ($model) {
                                     return $model->getName();
                                 },
-                                'filter'=>$title,
+//                                'filter'=>$model->name,
                             ],
                             'parent_id',
                             'order_by',

@@ -72,9 +72,9 @@
         <div class="header-bottom">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo-light"  src="/frontend-files/img/logo.jpg" alt="logo"
+                    <img class="logo-light" src="/frontend-files/img/logo.jpg" alt="logo"
                          style="width: 150px; height: auto">
-                    <img class="logo-dark"  src="/frontend-files/img/logo-dark.png" alt="logo"
+                    <img class="logo-dark" src="/frontend-files/img/logo-dark.png" alt="logo"
                          style="width: 150px; height: auto">
                 </a>
                 <div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
@@ -82,12 +82,16 @@
                         <a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
                     </div>
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Contact Us</a>
-                        </li>
                         <li class="nav-item d-lg-none">
                             <a href="appointment.html" class="nav-link btn style1">Book Appointment</a>
                         </li>
+                        <?php if (!empty($models)): ?>
+                            <?php foreach ($models as $model): ?>
+                                <li class="nav-item">
+                                    <a href="<?= $model->link ?>" class="nav-link"><?= $model->getName() ?></a>
+                                </li>
+                            <?php endforeach ?>
+                        <?php endif; ?>
                     </ul>
                     <div class="other-options md-none">
                         <div class="option-item">

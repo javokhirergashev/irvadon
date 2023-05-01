@@ -4,6 +4,7 @@ use yii\helpers\Html;
 
 /** @var yii\web\View $this */
 /** @var common\models\Department $model */
+/** @var common\models\Department $nameValues */
 
 $this->title = '  tahrirlash';
 $this->params['breadcrumbs'][] = ['label' => 'Departments', 'url' => ['index']];

@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 
 /** @var yii\web\View $this */
 /** @var common\models\Department $model */
+/** @var common\models\Department $nameValues */
 /** @var yii\widgets\ActiveForm $form */
 ?>
 <?php $form = ActiveForm::begin(); ?>
@@ -36,7 +37,7 @@ use yii\widgets\ActiveForm;
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label">Bo'lim nomi</label>
                                         <div class="col-md-9">
-                                            <?= $form->field($model, 'translate_department_name['.$language.']')->textInput(['maxlength' => true,'value' => $nameValues[$language]])->label(false) ?>
+                                            <?= $form->field($model, 'translate_department_name['.$language.']')->textInput(['maxlength' => true,'value' => (!empty($nameValues[$language]) ? $nameValues[$language] : '')])->label(false) ?>
                                         </div>
                                     </div>
                                 </div>
