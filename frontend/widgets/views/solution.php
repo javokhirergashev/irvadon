@@ -13,17 +13,16 @@
             <div class="col-lg-6"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                 <div class="appointment-content">
                     <div class="content-title style1">
-                        <span>Best Solutions</span>
-                        <h2>Awesome Smart Health Can Make Your Life Easier</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste cupiditate sit debitis, aut, perferendis praesentium alias, asperiores similique veniam vitae veritatis.</p>
+                        <h2><?= Yii::t("app", "solutiontitle") ?></h2>
+                        <p><?= Yii::t("app", "solutiontext") ?></p>
                     </div>
                     <ul class="content-feature-list list-style mb-0">
-                        <li><i class="ri-checkbox-circle-line"></i>Top Professional Team</li>
-                        <li><i class="ri-checkbox-circle-line"></i>World Class Dental Services</li>
-                        <li><i class="ri-checkbox-circle-line"></i>Discount On Treatment Fees</li>
-                        <li><i class="ri-checkbox-circle-line"></i>Multi-Functional Hospital</li>
-                        <li><i class="ri-checkbox-circle-line"></i>20+ Years Of Experience</li>
-                        <li><i class="ri-checkbox-circle-line"></i>Top Professional Specialist</li>
+                        <li><i class="ri-checkbox-circle-line"></i><?= Yii::t("app", "solution1") ?></li>
+                        <li><i class="ri-checkbox-circle-line"></i><?= Yii::t("app", "solution2") ?></li>
+                        <li><i class="ri-checkbox-circle-line"></i><?= Yii::t("app", "solution3") ?></li>
+                        <li><i class="ri-checkbox-circle-line"></i><?= Yii::t("app", "solution4") ?></li>
+                        <li><i class="ri-checkbox-circle-line"></i><?= Yii::t("app", "solution5") ?></li>
+                        <li><i class="ri-checkbox-circle-line"></i><?= Yii::t("app", "solution6") ?></li>
                     </ul>
                 </div>
             </div>

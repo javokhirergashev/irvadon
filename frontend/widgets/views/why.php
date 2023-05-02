@@ -5,9 +5,9 @@
             <div class="col-lg-6 order-lg-1 order-md-2 order-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
                 <div class="wh-content">
                     <div class="content-title style2">
-                        <span>Why Choose us</span>
-                        <h2>Protect Your Health With Our Health Package</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste cupiditate sit debitis, aut, perferendis praesentium alias, asperiores similique veniam vitae veritatis.</p>
+                        <span><?=Yii::t("app", "about1")?></span>
+                        <h2><?=Yii::t("app", "why_us")?></h2>
+                        <p><?=Yii::t("app", "why_ust")?></p>
                     </div>
                     <div class="feature-item-wrap">
                         <div class="feature-item">
@@ -15,8 +15,8 @@
                                 <i class="ri-check-line"></i>
                             </div>
                             <div class="feature-text">
-                                <h3>Mental Health Solution</h3>
-                                <p>Vestibulum ac diam sit amet quam vehicula elemen tum sed sit amet dui praesent sapien pellen tesque .</p>
+                                <h3><?= Yii::t("app", "why1") ?></h3>
+                                <p><?= Yii::t("app", "why1t") ?></p>
                             </div>
                         </div>
                         <div class="feature-item">
@@ -24,12 +24,12 @@
                                 <i class="ri-check-line"></i>
                             </div>
                             <div class="feature-text">
-                                <h3>Rapid Improvement Patient</h3>
-                                <p>Vestibulum ac diam sit amet quam vehicula elemen tum sed sit amet dui praesent sapien pellen tesque.</p>
+                                <h3><?= Yii::t("app", "why2") ?></h3>
+                                <p><?= Yii::t("app", "why2t") ?></p>
                             </div>
                         </div>
                     </div>
-                    <a href="about.html" class="btn style1">Get More info</a>
+                    <a href="about.html" class="btn style1"><?= Yii::t("app", "more") ?></a>
                 </div>
             </div>
             <div class="col-lg-6 order-lg-2 order-md-1 order-1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">

@@ -1,8 +1,7 @@
 <section class="pricing-wrap pt-100 pb-75">
     <div class="container">
         <div class="section-title style1 text-center mb-40">
-            <span>Pricing Plan</span>
-            <h2>Our Simple &amp; Affordable Plan</h2>
+            <h2><?= Yii::t("app", "price") ?></h2>
         </div>
         <div class="row justify-content-center">
             <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
@@ -24,7 +23,7 @@
                         <li class="unchecked">X-rays<i class="ri-close-fill"></i></li>
                         <li class="unchecked">Cancer Treatment<i class="ri-close-fill"></i></li>
                     </ul>
-                    <a href="login.html" class="btn style2">Get Started Now</a>
+                    <a href="login.html" class="btn style2"><?= Yii::t("app", "pay") ?></a>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">

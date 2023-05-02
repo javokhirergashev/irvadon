@@ -1,6 +1,6 @@
 <?php
 return [
-    "language" => "Uzbek",
+    "til" => "Uzbek",
     "more" => "More",
     "about1" => "About Us",
     "about2" => "Our Popular Services",
@@ -20,12 +20,30 @@ return [
     "slider2" => "At the children's multidisciplinary medical center of Namangan region, our qualified specialists will help restore and maintain your child's health!",
     "counter" => "Medical staff",
     "service0" => "Our Services",
-    "service01" => "Services provided by our doctors",
+    "service01" => "Free services provided by our doctors",
     "contact" => "Make an appointment with the doctor now",
     "contact1" => "Make an appointment for the doctor you need through our website, it's all easy!",
     "team" => "Our staff",
+    "pay" => "Payment",
     "team1" => "Our qualified doctors",
     "team2" => "Our qualified doctors",
-    "organization" => "Namangan Regional Children's Multidisciplinary Medical Center"
-]
+    "organization" => "Namangan Regional Children's Multidisciplinary Medical Center",
+    "solution1" => "Pediatric Cardiology",
+    "solution2" => "Children's Physiotherapy",
+    "solution3" => "Children's Orthopedics",
+    "solution4" => "Pediatric Neurology",
+    "solution5" => "Children's ENT",
+    "solution6" => "Pediatric Dermatology",
+    "solutiontitle" => "All services available in our hospital",
+    "solutiontext" => "The center operates in accordance with the REGULATIONS. The main activity of the center is to provide medical services to children of our region and neighboring regions under the age of 0-18.",
+    "why_us" => "About our hospital",
+    "why1" => "Professional Service",
+    "why1t" => "Providing free, highly qualified, specialized, high-tech medical care to children who come to the center for examination and treatment",
+    "why2" => "Continuous Development",
+    "why2t" => "Development of advanced methods of prevention, diagnosis and treatment in the field of pediatrics and implementation of scientific research aimed at implementation in medical practice",
+    "why_ust" => "Since the first years of our independence, mother and child health care and the formation of a healthy generation have been considered a priority in our country. We try to ensure the formation of a healthy, comprehensively developed generation. We support the quality of medical service standards. New technological treatment and examination We support the introduction of methods. We protect children's rights and save their lives.",
+    "faq" => "Frequently Asked Questions",
+    "news" => "Latest News",
+    "price" => "Our Paid Services",
+    ]
 ?>

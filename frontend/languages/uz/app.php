@@ -1,5 +1,6 @@
 <?php
 return [
+    "pay" => "To'lov qilish",
     "til" => "Uzbekcha",
     "more" => "Batafsil",
     "about1" => "Biz haqimizda",
@@ -20,13 +21,30 @@ return [
     "slider2" => "Namangan viloyati  bolalar ko'p tarmoqli tibbiyot markazida malakali mutahassislarimiz tomonidan  farzandingiz salomatligini tiklash va uni saqlashda yordam beramiz!",
     "counter" => "Tibbiy xodimlar",
     "service0" => "Bizning xizmatlar",
-    "service01" => "Shifokorlarimiz taqdim etadigan xizmatlar",
+    "service01" => "Shifokorlarimiz taqdim etadigan bepul xizmatlar",
     "contact" => "Shifokor huzuriga hoziroq buyurtma bering",
     "contact1" => "Web-saytimiz orqali o'zingizga kerakli shifokor uchun navbat oling, buning barchasi oson!",
     "team" => "Bizning xodimlar",
     "team1" => "Bizning malakali shifokorlarimiz",
     "team2" => "Bizning malakali shifokorlarimiz",
-    "organization" => "Namangan viloyat bolalar ko'p tarmoqli tibbiyot markazi"
+    "organization" => "Namangan viloyat bolalar ko'p tarmoqli tibbiyot markazi",
+    "solution1" => "Bolalar Kardiologiyasi",
+    "solution2" => "Bolalar Fizioterapeyasi",
+    "solution3" => "Bolalar Ortopediyasi",
+    "solution4" => "Bolalar Nevrologiyasi",
+    "solution5" => "Bolalar LOR",
+    "solution6" => "Bolalar Dermatologiyasi",
+    "solutiontitle" => "Shifoxonamizda mavjud barcha xizmatlar",
+    "solutiontext" => "Markaz NIZOMga muvofiq faoliyat ko‘rsatadi. Markazning asosiy faoliyati viloyatimiz va kushni viloyatlarning 0-18 yoshgacha bolalariga tibbiy xizmat ko‘rsatish.",
+    "why_us" => "Shifoxonamiz haqida",
+    "why1" => "Profissional xizmat",
+    "why1t" => "Markazga tekshirish va davo olish maqsadida murojaat qilgan bolalarga bepul, yuqori malakali, ixtisoslashtirilgan, yuqori texnologiyali tibbiy yordam ko‘rsatish",
+    "why2" => "Doimiy rivojlanish",
+    "why2t" => "Pediatriya sohasida profilaktika, diagnostika va davolash bo‘yicha ilg‘or metodlarini ishlab chiqish va tibbiy amaliyotga joriy etishga yo‘naltirilgan ilmiy tadqiqotlarni amalga oshirish",
+    "why_ust" => "Mustaqilligimizning ilk yillaridan boshlab mamlakatimizda ona va bola sogʼligʼini saqlash hamda sogʼlom avlodni shakllantirish ustuvor yoʼnalish deb hisoblanadi. Biz sogʼlom, har tomonlama rivojlangan avlod shakllanishini taʼminlashga harakat qilamiz. Tibbiy xizmat standartlarini sifatli boʼlishini qoʼllab quvvatlaymiz. Davolash va tekshirishning yangi texnologik usullarini kiritilishini tarafdorimiz. Biz bolalar huquqlarini himoyalaymiz va ularning hayotini saqlab qolamiz.",
+    "faq" => "Ko'p beriladigan savollar",
+    "news" => "Eng so'nggi yangiliklar",
+    "price" => "Bizning pullik xizmatlar",
 
 ]
 ?>

@@ -8,7 +8,7 @@
                         <img  src="/frontend-files/img/logo-white.png" alt="Image">
                     </a>
                     <p class="comp-desc">
-                        Lorem ipsum dolor sit amet consc tetur adicing elit. Dolor emque dicta molest enim beatae ame consequ atur tempo pretium auctor nam.
+                        <?= Yii::t("app", "slider2") ?>
                     </p>
                     <ul class="social-profile style1 list-style">
                         <li>

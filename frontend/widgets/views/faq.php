@@ -11,8 +11,8 @@
             <div class="col-lg-6">
                 <div class="faq-content">
                     <div class="content-title style1 mb-40">
-                        <span>FAQ</span>
-                        <h2>Frequently Asked Questions</h2>
+                        <span></span>
+                        <h2><?= Yii::t("app", "faq") ?></h2>
                     </div>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">

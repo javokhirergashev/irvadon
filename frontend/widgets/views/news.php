@@ -3,8 +3,7 @@
         <div class="row">
             <div class="col-xl-6 offset-xl-3  col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                 <div class="section-title style1 text-center mb-40">
-                    <span>Our Blog</span>
-                    <h2>Our Latest &amp; Most Popular Tips &amp; Tricks For You</h2>
+                    <h2><?= Yii::t("app", "news") ?></h2>
                 </div>
             </div>
         </div>
@@ -21,7 +20,7 @@
                             <li><i class="ri-wechat-line"></i>No Comment</li>
                         </ul>
                         <h3><a href="blog-details-right-sidebar.html">Telehealth Services Are Ready To Help Your Family </a></h3>
-                        <a href="blog-details-right-sidebar.html" class="link style2">Read More<i class="flaticon-right-arrow"></i></a>
+                        <a href="blog-details-right-sidebar.html" class="link style2"><?= Yii::t("app", "more") ?><i class="flaticon-right-arrow"></i></a>
                     </div>
                 </div>
             </div>
