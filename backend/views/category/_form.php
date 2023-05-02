@@ -36,7 +36,7 @@ use yii\widgets\ActiveForm;
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label">Kategoriya nomi</label>
                                         <div class="col-md-9">
-                                            <?= $form->field($model, 'translate_category_name['.$language.']')->textInput(['maxlength' => true,'value' => $nameValues[$language]])->label(false) ?>
+                                            <?= $form->field($model, 'translate_category_name['.$language.']')->textInput(['maxlength' => true,'value' => (!empty($nameValues[$language]) ? $nameValues[$language] : '')])->label(false) ?>
                                         </div>
                                     </div>
                                 </div>
