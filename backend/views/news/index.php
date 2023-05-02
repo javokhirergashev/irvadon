@@ -48,14 +48,14 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'value'=> function ($model) {
                                     return $model->getTitle();
                                 },
-                                'filter'=>$title,
+//                                'filter'=>$title,
                             ],
                             [
                                 'attribute'=>'description',
                                 'value'=> function ($model) {
                                     return $model->getdescription();
                                 },
-                                'filter'=>$description,
+//                                'filter'=>$description,
                             ],
 //                            'body:ntext',
                             [

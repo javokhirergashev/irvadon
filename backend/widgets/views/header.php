@@ -1,7 +1,7 @@
 <div class="header">
     <div class="header-left">
         <a href="index.html" class="logo">
-            <img   src="/backend-files/img/logo.png" width="35" height="35" alt=""> <span>Pre Clinic</span>
+            <img   src="/backend-files/img/logo1.svg" width="35" height="35" alt=""> <span>NAMVBKTTM Admin paneli</span>
         </a>
     </div>
     <a id="toggle_btn" href="javascript:void(0);"><img   src="/backend-files/img/icons/bar-icon.svg" alt=""></a>

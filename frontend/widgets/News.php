@@ -8,6 +8,7 @@ class News extends Widget
 {
     public function run()
     {
-        return $this->render('news');
+        $models = \common\models\News::find()->where(['status' =>1])->orderBy(["id"=>SORT_DESC])->all();
+        return $this->render('news',compact('models'));
     }
 }
