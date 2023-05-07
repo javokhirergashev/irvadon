@@ -22,14 +22,8 @@
                         <img src="<?= $img ?>" alt="Image">
                     </div>
                     <div class="blog-info">
-                        <!--                                <a href="posts-by-date.html" class="blog-date"><span>25</span>Jun</a>-->
-                        <ul class="blog-metainfo  list-style">
-                            <!--                                    <li><i class="ri-user-unfollow-line"></i><a href="posts-by-author.html">Admin</a>-->
-                            <!--                                    </li>-->
-                            <!--                                    <li><i class="ri-wechat-line"></i>No Comment</li>-->
-                        </ul>
-                        <h3><a href="blog-details-right-sidebar.html"><?= $model->getTitle() ?> </a></h3>
-                        <a href="blog-details-right-sidebar.html" class="link style2">Read More<i
+                        <h3><a href="<?=yii\helpers\Url::to(['newsview/view', "id"=>$model->id]);?>"><?= $model->getTitle() ?> </a></h3>
+                        <a href="<?=yii\helpers\Url::to(['newsview/view', "id"=>$model->id]);?>" class="link style2"><?= Yii::t("app", "read_more") ?><i
                                     class="flaticon-right-arrow"></i></a>
                     </div>
                 </div>

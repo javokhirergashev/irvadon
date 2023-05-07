@@ -29,22 +29,12 @@
                             </div>
                         </div>
                     </div>
-                    <a href="about.html" class="btn style1"><?= Yii::t("app", "more") ?></a>
                 </div>
             </div>
             <div class="col-lg-6 order-lg-2 order-md-1 order-1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
                 <div class="wh-img-wrap">
                     <div class="wh-bg-3 bg-f"></div>
-                    <div class="about-doctor-box">
-                        <div class="doctor-img">
-                            <img  src="/frontend-files/img/about/doctor-1.jpg" alt="Image">
-                        </div>
-                        <div class="doctor-info">
-                            <h5>Dr. Kate Winslet</h5>
-                            <span>Radiology</span>
-                        </div>
-                        <button type="button" class="btn">Select</button>
-                    </div>
+
                 </div>
             </div>
         </div>

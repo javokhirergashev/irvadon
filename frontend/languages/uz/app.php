@@ -45,6 +45,10 @@ return [
     "faq" => "Ko'p beriladigan savollar",
     "news" => "Eng so'nggi yangiliklar",
     "price" => "Bizning pullik xizmatlar",
-
+    "read_more" => "Batafsil",
+    "visit" => "Istalgan vaqtda bizga tashrif buyuring",
+    "send_email" => "Bizga xabar yo'llang",
+    "call_center" => "Kol markazi",
+    "vacancy" => "Bizning bo'sh ish o'rinlarimiz",
 ]
 ?>

@@ -1,23 +1,25 @@
 <?php
 
-use common\models\Department;
+use common\models\Vacancy;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /** @var yii\web\View $this */
-/** @var common\models\search\DepartmentSearch $searchModel */
+/** @var common\models\search\VacancySearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Bo\'limlar';
+$this->title = 'Vakansiyalar';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="department-index">
+<div class="vacancy-index">
     <div class="page-header">
         <div class="row">
             <div class="col-sm-12">
                 <ul class="breadcrumb">
-                     <li class="breadcrumb-item"><a href="<?= \yii\helpers\Url::to(['site/index']) ?>">Dashboard </a></li>
+                    <li class="breadcrumb-item"><a href="<?= \yii\helpers\Url::to(['site/index']) ?>">Dashboard </a>
+                    </li>
                     <li class="breadcrumb-item"><i class="feather-chevron-right"></i></li>
                     <li class="breadcrumb-item active"><?= Html::encode($this->title) ?></li>
                 </ul>
@@ -29,7 +31,9 @@ $this->title = 'Bo\'limlar';
         <div class="col-md-12">
             <div class="card-box">
                 <div class="table-responsive p-5">
+
                     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+
                     <?= GridView::widget([
                         'dataProvider' => $dataProvider,
                         'filterModel' => $searchModel,
@@ -40,16 +44,11 @@ $this->title = 'Bo\'limlar';
                             ['class' => 'yii\grid\SerialColumn'],
 
 //                            'id',
-                            [
-                                'attribute'=>'title',
-                                'value'=> function ($model) {
-                                    return $model->getName();
-                                },
-//                                'filter'=>$department_name,
-                            ],
+                            'vacancy_name',
+                            'salary',
+                            'rate',
                             'created_at',
                             'updated_at',
-                            'phone',
                             [
                                 'attribute' => 'creator',
                                 'value' => function ($data) {
@@ -60,7 +59,16 @@ $this->title = 'Bo\'limlar';
                                     }
                                 }
                             ],
-                            'status',
+                            [
+                                'attribute' => 'status',
+                                'value' => function ($data) {
+                                    if ($data->status == 1) {
+                                        return 'faol';
+                                    }else{
+                                        return 'faol emas';
+                                    }
+                                }
+                            ],
                             [
                                 'class' => 'yii\grid\ActionColumn',
                                 'header' => 'Amallar',
@@ -88,5 +96,4 @@ BUTTONS;
             </div>
         </div>
     </div>
-
 </div>

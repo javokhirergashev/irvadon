@@ -34,7 +34,7 @@ class Department extends \yii\db\ActiveRecord
 //            [['department_name'], 'required'],
             [['created_at', 'updated_at'], 'safe'],
             [['creator', 'status'], 'integer'],
-            [['department_name'], 'string', 'max' => 255],
+            [['department_name', 'phone'], 'string', 'max' => 255],
             [['translate_department_name'], 'safe']
         ];
     }
@@ -50,6 +50,7 @@ class Department extends \yii\db\ActiveRecord
             'translate_department_name'=>Yii::t('yii','Title'),
             'created_at' => 'Yaratilgan vaqti',
             'updated_at' => 'Tahrirlangan vaqti',
+            'phone' => 'Bo\'lim raqami',
             'creator' => 'Yaratuvchi',
             'status' => 'Status',
         ];

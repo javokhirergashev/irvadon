@@ -4,7 +4,7 @@
         <div class="row align-items-center gx-5">
             <div class="col-lg-6"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                 <div class="promo-bg bg-f">
-                    <a class="play-now" data-fancybox="" href="https://www.youtube.com/watch?v=UNSSuTSQI9I">
+                    <a class="play-now" data-fancybox="" href="https://youtu.be/hhy5v_yaqK0">
                         <i class="ri-play-fill"></i>
                         <span class="ripple"></span>
                     </a>

@@ -2,16 +2,17 @@
 
 namespace backend\controllers;
 
-use common\models\ServiceCategory;
-use common\models\search\ServiceCategorySearch;
+use common\models\Vacancy;
+use common\models\search\VacancySearch;
+use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * CategoryController implements the CRUD actions for ServiceCategory model.
+ * VacancyController implements the CRUD actions for Vacancy model.
  */
-class CategoryController extends Controller
+class VacancyController extends Controller
 {
     /**
      * @inheritDoc
@@ -32,13 +33,13 @@ class CategoryController extends Controller
 //    }
 
     /**
-     * Lists all ServiceCategory models.
+     * Lists all Vacancy models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $searchModel = new ServiceCategorySearch();
+        $searchModel = new VacancySearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -48,7 +49,7 @@ class CategoryController extends Controller
     }
 
     /**
-     * Displays a single ServiceCategory model.
+     * Displays a single Vacancy model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -61,24 +62,31 @@ class CategoryController extends Controller
     }
 
     /**
-     * Creates a new ServiceCategory model.
+     * Creates a new Vacancy model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new ServiceCategory();
+        $model = new Vacancy();
 
-        if ($model->load($this->request->post())) {
-            echo "<pre>";
-//            print_r($model->translate_department_name); die();
-            if ($model->validate()) {
-                $model->category_name = json_encode($model->translate_category_name, JSON_UNESCAPED_SLASHES);
-                $model->save();
-                return $this->redirect(['index']);
+        if ($this->request->isPost) {
+            if (!empty(!$model->status)) {
+                $model->status = 1;
             } else {
-                print_r($model->errors);
-                die;
+                $model->status = 0;
+            }
+
+            if ($model->load($this->request->post())) {
+                if ($model->validate()) {
+                    $model->created_at = date("Y-m-d H:i:s");
+                    $model->creator = Yii::$app->user->getId();
+                    $model->save();
+                    return $this->redirect(['index']);
+                } else {
+                    print_r($model->errors);
+                    die;
+                }
             }
         } else {
             $model->loadDefaultValues();
@@ -90,7 +98,7 @@ class CategoryController extends Controller
     }
 
     /**
-     * Updates an existing ServiceCategory model.
+     * Updates an existing Vacancy model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -100,28 +108,27 @@ class CategoryController extends Controller
     {
         $model = $this->findModel($id);
 
-        $nameValues = json_decode($model->category_name, true);
-//        print_r($model->department_name);die;
-        if ($this->request->isPost && $model->load($this->request->post())) {
-            if ($model->validate()) {
-                $model->category_name = json_encode($model->translate_category_name, JSON_UNESCAPED_SLASHES);
-                $model->save();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->updated_at = date("Y-m-d H:i:s");
+            if ($model->save()) {
                 return $this->redirect(['index']);
             } else {
-                print_r($model->errors);
-                die;
+                return print_r($model->errors);
             }
-            return $this->redirect(['index']);
+            if ($model->save()) {
+                return $this->redirect(['index']);
+            } else {
+                return print_r($model->errors);
+            }
         }
 
         return $this->render('update', [
             'model' => $model,
-            'nameValues' => $nameValues
         ]);
     }
 
     /**
-     * Deletes an existing ServiceCategory model.
+     * Deletes an existing Vacancy model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -135,15 +142,15 @@ class CategoryController extends Controller
     }
 
     /**
-     * Finds the ServiceCategory model based on its primary key value.
+     * Finds the Vacancy model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return ServiceCategory the loaded model
+     * @return Vacancy the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = ServiceCategory::findOne(['id' => $id])) !== null) {
+        if (($model = Vacancy::findOne(['id' => $id])) !== null) {
             return $model;
         }
 

@@ -46,7 +46,7 @@ $this->registerJs($js);
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label">Sarlavha</label>
                                             <div class="col-md-9">
-                                                <?= $form->field($model, 'translate_title[' . $language . ']')->textInput(['maxlength' => true, 'value' => $titleValues[$language]])->label(false) ?>
+                                                <?= $form->field($model, 'translate_title[' . $language . ']')->textInput(['maxlength' => true, (!empty( $titleValues[$language]) ? $titleValues[$language] : '')])->label(false) ?>
                                             </div>
                                         </div>
                                     </div>
@@ -54,7 +54,7 @@ $this->registerJs($js);
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label">Izoh</label>
                                             <div class="col-md-9">
-                                                <?= $form->field($model, 'translate_description[' . $language . ']')->textInput(['maxlength' => true, 'value' => $descriptionValues[$language]])->label(false) ?>
+                                                <?= $form->field($model, 'translate_description[' . $language . ']')->textInput(['maxlength' => true, 'value' => (!empty( $descriptionValues[$language]) ? $descriptionValues[$language] : '')]) ?>
                                             </div>
                                         </div>
                                     </div>
@@ -62,7 +62,7 @@ $this->registerJs($js);
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label">Yangilik matni</label>
                                             <div class="col-md-9">
-                                                <?= $form->field($model, 'translate_body[' . $language . ']')->textarea(['rows' => 5, 'value' => $bodyValues[$language]])->label(false) ?>
+                                                <?= $form->field($model, 'translate_body[' . $language . ']')->textarea(['rows' => 5, 'value' => (!empty( $bodyValues[$language]) ? $bodyValues[$language] : '')]) ?>
                                             </div>
                                         </div>
                                     </div>

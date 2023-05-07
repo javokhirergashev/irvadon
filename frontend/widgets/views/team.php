@@ -14,32 +14,22 @@
             <?php if (!empty($models)): ?>
                 <?php foreach ($models as $model): ?>
                     <?php
-                        $img = \common\models\StaticFunctions::getImage('user', $model->id, $model->image);
+                    $img = \common\models\StaticFunctions::getImage('user', $model->id, $model->image);
                     ?>
                     <div class="team-card style2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                         <img src="<?= $img ?>" alt="Image">
                         <div class="team-info">
-                            <h3><?= $model->firstname ?> <?= $model->lastname?></h3>
+                            <h3><?= $model->firstname ?> <?= $model->lastname ?></h3>
                             <span>Shifokor</span>
                             <ul class="social-profile style2 list-style">
                                 <li>
-                                    <a target="_blank" href="https://facebook.com/">
+                                    <a target="_blank" href="<?= $model->facebook_link ?>">
                                         <i class="ri-facebook-fill"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://twitter.com/">
-                                        <i class="ri-twitter-fill"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://instagram.com/">
-                                        <i class="ri-instagram-line"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://linkedin.com/">
-                                        <i class="ri-linkedin-fill"></i>
+                                    <a target="_blank" href="<?= $model->telegram_link ?>">
+                                        <i class="ri-telegram-fill"></i>
                                     </a>
                                 </li>
                             </ul>

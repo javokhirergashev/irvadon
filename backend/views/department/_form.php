@@ -43,6 +43,14 @@ use yii\widgets\ActiveForm;
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group row">
+                                        <label class="col-md-3 col-form-label">Bo'lim raqami</label>
+                                        <div class="col-md-9">
+                                            <?= $form->field($model, 'phone')->textInput(['maxlength' => true])->label(false) ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group row">
                                         <label class="col-md-3 col-form-label">Status</label>
                                         <div class="col-md-9">
                                             <?= $form->field($model, 'status')->dropDownList(['1' => 'faol', '0' => 'faol emas'])->label(false) ?>

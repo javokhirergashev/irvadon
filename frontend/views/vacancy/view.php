@@ -1,7 +1,7 @@
 <section class="pricing-wrap pt-100 pb-75">
     <div class="container">
         <div class="section-title style1 text-center mb-40">
-            <h2><?= Yii::t("app", "price") ?></h2>
+            <h2><?= Yii::t("app", "vacancy") ?></h2>
         </div>
         <div class="row justify-content-center">
             <?php if (!empty($models)): ?>
@@ -11,20 +11,19 @@
                         <div class="pricing-card">
                             <div class="pricing-header">
                                 <div class="pricing-header-left">
-                                    <h5><?= $model->getServiceName() ?></h5>
-                                    <h2><?= $model->price ?><span>UZS</span></h2>
+                                    <h5><?= $model->vacancy_name?></h5>
+                                    <h2><?= $model->salary ?><span>UZS</span></h2>
                                 </div>
                                 <div class="pricing-header-right">
                                     <i class="flaticon-clipboard"></i>
                                 </div>
                             </div>
                             <ul class="pricing-features list-style">
-                                <li class="checked">New Patient Consultation <i class="ri-check-line"></i></li>
-                                <li class="checked">Regular health Checkup<i class="ri-check-line"></i></li>
-                                <li class="checked">Ocupational Therapy<i class="ri-check-line"></i></li>
-                                <li class="checked">Phusical Therapy<i class="ri-check-line"></i></li>
+                                <li class="checked"><?=$model->rate?> stavka <i class="ri-check-line"></i></li>
+                                <li class="checked"><?=$model->salary?> UZS<i class="ri-check-line"></i></li>
+                                <li class="checked">To'liq<i class="ri-check-line"></i></li>
                             </ul>
-                            <a href="<?php echo $checkout_url; ?>" class="btn style2"><?= Yii::t("app", "pay") ?></a>
+                            <a href="link" class="btn style2">Apply</a>
                         </div>
                     </div>
                 <?php endforeach; ?>

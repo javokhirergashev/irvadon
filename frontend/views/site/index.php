@@ -2,7 +2,7 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'My Yii Application';
+$this->title = 'namvbkttm.uz/';
 ?>
 <p><a href="<?php echo $checkout_url; ?>">Payme</a>
 </p>

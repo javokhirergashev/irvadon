@@ -8,9 +8,7 @@ class Service extends Widget
 {
     public function run()
     {
-        $models = \common\models\Service::find()->where(["status" =>1])->all();
-//        "<pre>";
-//        print_r($models); die();
+        $models = \common\models\Service::find()->where(["status" =>1, "service_category" => 1])->all();
         return $this->render('service',compact('models'));
     }
 }

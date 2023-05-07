@@ -71,7 +71,7 @@
     <div class="container">
         <div class="header-bottom">
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="https://namvbkttm.uz/">
                     <img class="logo-light" src="/frontend-files/img/logo.jpg" alt="logo"
                          style="width: 150px; height: auto">
                     <img class="logo-dark" src="/frontend-files/img/logo-dark.png" alt="logo"
@@ -127,7 +127,7 @@
                             <div class="hero-btn">
                                 <a href="about.html" class="btn style1">Find Out More</a>
                                 <a class="play-video" data-fancybox=""
-                                   href="https://www.youtube.com/watch?v=UNSSuTSQI9I">
+                                   href="https://youtu.be/hhy5v_yaqK0">
                                                 <span class="video-icon">
                                                     <i class="ri-play-fill"></i>
                                                 </span>

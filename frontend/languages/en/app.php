@@ -45,5 +45,12 @@ return [
     "faq" => "Frequently Asked Questions",
     "news" => "Latest News",
     "price" => "Our Paid Services",
+    "read_more" => "Read more",
+    "visit" => "Visit Us Anytime",
+    "send_email" => "Send An Email",
+    "call_center" => "Call Center",
+    "vacancy" => "Our vacancies",
+
+
     ]
 ?>

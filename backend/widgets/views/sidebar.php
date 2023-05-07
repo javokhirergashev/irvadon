@@ -31,7 +31,7 @@
                     <a href="#"><span class="menu-side"><img   src="/backend-files/img/icons/menu-icon-05.svg" alt=""></span> <span>Xizmatlar </span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
                         <li><a href="<?= \yii\helpers\Url::to(['service/']) ?>">Xizmatlar ro'yxati</a></li>
-                        <li><a href="<?= \yii\helpers\Url::to(['service/create']) ?>">Yangi xodim qo'shish</a></li>
+                        <li><a href="<?= \yii\helpers\Url::to(['service/create']) ?>">Yangi xizmat qo'shish</a></li>
                         <li><a href="<?= \yii\helpers\Url::to(['category/']) ?>">Xizmatlar kategoriyasi</a></li>
                         <li><a href="<?= \yii\helpers\Url::to(['category/create']) ?>">Yangi kategoriya qo'shish</a></li>
                     </ul>
@@ -62,6 +62,13 @@
                     <ul style="display: none;">
                         <li><a href="<?= \yii\helpers\Url::to(['faq/']) ?>">Savol-Javoblar</a></li>
                         <li><a href="<?= \yii\helpers\Url::to(['faq/create']) ?>">Yangi qo'shish</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#"><span class="menu-side"><img   src="/backend-files/img/icons/menu-icon-15.svg" alt=""></span> <span>Vakansiyalar </span> <span class="menu-arrow"></span></a>
+                    <ul style="display: none;">
+                        <li><a href="<?= \yii\helpers\Url::to(['vacancy/']) ?>">Vakansiyalar ro'yhati</a></li>
+                        <li><a href="<?= \yii\helpers\Url::to(['vacancy/create']) ?>">Yangi vakansiya qo'shish</a></li>
                     </ul>
                 </li>
                 <li>

@@ -39,7 +39,7 @@ use yii\widgets\ActiveForm;
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label">Xizmat nomi</label>
                                             <div class="col-md-9">
-                                                <?= $form->field($model, 'translate_service_name[' . $language . ']')->textInput(['maxlength' => true, 'value' => $nameValues[$language]])->label(false) ?>
+                                                <?= $form->field($model, 'translate_service_name[' . $language . ']')->textInput(['maxlength' => true, (!empty($nameValues[$language]) ? $nameValues[$language] : '')])->label(false) ?>
                                             </div>
                                         </div>
                                     </div>
@@ -47,7 +47,7 @@ use yii\widgets\ActiveForm;
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label">Izoh</label>
                                             <div class="col-md-9">
-                                                <?= $form->field($model, 'translate_service_description[' . $language . ']')->textInput(['maxlength' => true, 'value' => $descriptionValues[$language]])->label(false) ?>
+                                                <?= $form->field($model, 'translate_service_description[' . $language . ']')->textInput(['maxlength' => true, (!empty($nameValues[$language]) ? $descriptionValues[$language] : '')])->label(false) ?>
                                             </div>
                                         </div>
                                     </div>
